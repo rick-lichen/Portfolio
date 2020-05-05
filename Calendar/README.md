@@ -1,6 +1,4 @@
-# CSE330
-466648
-466711
+# This is a Calendar web app built from PHP, MySQL, HTML & CSS, served originally on an AWS EC2 Instance with Apache.
 # Link to Calendar: 
 http://ec2-18-219-200-46.us-east-2.compute.amazonaws.com/~rick.liu/module5/calendar.php
 \
