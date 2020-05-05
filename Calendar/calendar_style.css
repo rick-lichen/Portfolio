@@ -1,0 +1,187 @@
+html {
+  background-color: #fcf2dc;
+}
+table {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+span.title {
+  text-align: center;
+  display: block;
+}
+h2#month_year {
+  text-align: center;
+  display: block;
+}
+div.login_register {
+  display: none;
+}
+div.logout {
+  text-align: right;
+  display: none;
+}
+div.logout input {
+  background-color: beige;
+  border-radius: 5px;
+}
+div.logout input:hover {
+  background-color: yellow;
+  font-size: 12px;
+}
+div.navigation {
+  text-align: center;
+}
+div.navigation button {
+  border-radius: 5px;
+  background-color: orange;
+}
+div.navigation button:hover {
+  background-color: yellow;
+  font-size: 12px;
+}
+.today {
+  background: lightcoral;
+  display: block;
+}
+.today:hover {
+  background: lightblue;
+}
+.others {
+  background: lightgrey;
+  display: block;
+}
+.others:hover {
+  background: lightblue;
+}
+.calendar {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#dialog,
+div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+  /*creating and displaying events*/
+  background-color: #fefbf5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+#dialog label,
+div.hello.ui-dialog-content.ui-widget-content {
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.ui-dialog .ui-dialog-titlebar {
+  padding: 0.1em 0.5em;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  background-color: #c15c37;
+  color: white;
+  border-radius: 5px;
+}
+#event_due,
+#event_name,
+#event_description {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.ui-button,
+button.edit_submit,
+button.edit_cancel,
+button.edit,
+button.delete,
+button.add_user {
+  background-color: orange;
+  border-radius: 2px;
+}
+.ui-button:hover,
+button.edit_submit:hover,
+button.edit_cancel:hover,
+button.edit:hover,
+button.delete:hover,
+button.add_user:hover {
+  background-color: yellow;
+  font-size: 12px;
+}
+button.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+  /*close button*/
+  position: absolute;
+  right: 10px;
+}
+div.hello {
+  display: none;
+}
+div.welcome {
+  display: none;
+}
+span#has_event {
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+}
+p.event_date {
+  display: none;
+}
+div.tags {
+  text-align: center;
+  display: none;
+}
+div.tag_names {
+  text-align: center;
+  padding-top: 5px;
+}
+.bold {
+  color: red;
+}
+div.choose_tags {
+  text-align: center;
+  display: none;
+}
+.hidden {
+  display: none;
+}
+div.tag_names {
+  display: none;
+}
+#add_Event {
+  display: none;
+}
+label#sharing {
+  font-size: 14px;
+}
+div#sharing_user {
+  padding-left: 10px;
+}
+div.ui-dialog-buttonset {
+  padding-left: 10px;
+}
+td:hover {
+  background-color: lightblue;
+}
+label.ui-checkboxradio-label.ui-corner-all.ui-button.ui-widget.ui-checkboxradio-radio-label {
+  background-color: #fcf2dc;
+  border-radius: 5px;
+  padding: 2px;
+  border: 0.5px solid darkgoldenrod;
+}
+label.ui-checkboxradio-label.ui-corner-all.ui-button.ui-widget.ui-checkboxradio-radio-label:hover {
+  font-size: 110%;
+}
+label.event_name_label,
+label.event_desc_label,
+label.event_time_label {
+  font-weight: bold;
+}
+label.event_name_label {
+  margin-top: 10px;
+  display: block;
+}
+div.choose_names {
+  margin-top: 10px;
+}
