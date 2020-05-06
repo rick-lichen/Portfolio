@@ -1,7 +1,7 @@
 [Back](../)
 
 # Focus Tree – Productivity Web App
-This is a productivity web app created with the Forest mobile app as a source of inspiration. It uses React, Express, Node.js, MySQL, and SASS.
+This is a productivity web app created with the Forest mobile app as a source of inspiration. It uses React, Express, Node.js, MySQL, and SASS. This was an assignment from WashU's CSE330 course – Rapid Prototype Development and Creative Programming, and was done with my partner Josh Wang.
 
 **Description**: Focus Tree is a productivity tool that allows users to set a timer for a period of time during which they will remain solely on the page. This allows the users to stay focused over a desired period of time thereby improving their efficiency when accomplishing tasks. The page will detect when the user switches tab or closes it altogether and break the timer that the user has initially set. However, the users are granted emergency breaks during which the timer will not break if they tab out (this could be useful for when the user needs to google something). In addition, the page allows users to create a to-do list with customizable times for each task. Finally, the page will play some default white-noise to help users concentrate but we will challenge ourselves to work with the Spotify API and allow users to connect to their personal Spotify playlists. 
 
