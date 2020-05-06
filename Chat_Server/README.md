@@ -1,7 +1,7 @@
 [Back](../)
 
 # Chat Server Web App
-This is a Chat Server web app built from Node.js and Socket.io. This was an assignment from WashU's CSE330 course – Rapid Prototype Development and Creative Programming, and was done with my partnet Josh Wang.
+This is a Chat Server web app built from Node.js and Socket.io. This was an assignment from WashU's CSE330 course – Rapid Prototype Development and Creative Programming, and was done with my partner Josh Wang.
 
 **Short Demo**
 
