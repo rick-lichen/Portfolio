@@ -7,7 +7,7 @@ This is a productivity web app created with the Forest mobile app as a source of
 
 ![Focus Tree Demo](../Demos/Focus_Tree_Demo.gif)
 
-For the full demo video, see https://youtu.be/h1tsfa73ZpA
+For the full demo video, watch on [YouTube](https://youtu.be/h1tsfa73ZpA)
 
 **Functionalities**:
 - Register/Login/Guest User
