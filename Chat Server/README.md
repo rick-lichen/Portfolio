@@ -8,6 +8,8 @@ This is a Chat Server web app built from Node.js and Socket.io. This was an assi
 - A private room can be created that is password protected 
 - Creators of chat rooms can temporarily kick others out of the room 
 - Creators of chat rooms can permanently ban users from joining that particular room 
+- A user's message shows their username and is sent to everyone in the room 
+- Users can send private messages to another user in the same room
 
 
 In addition to the basic functionalities, we decided to experiment with including **audio** to html via javascript and added an audio file to our instance. This is linked to the front-end so that whenever a new message is received, the notification sound is played. 
