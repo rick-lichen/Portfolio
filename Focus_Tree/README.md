@@ -22,3 +22,5 @@ For the full demo video, watch on [YouTube](https://youtu.be/h1tsfa73ZpA)
 # Creative Portion Description:
 In addition to the basic functionalities, we also stored the logged in user's chosen theme as well as their remaining to-do lists. This was done by configuring a MySQL database in our Express backend. Registered users have their password hashed through Bcrypt and have a default theme and empty to-do list. When a user is logged in, any changes to the theme or to-do list in the front end would cause the backend to make the respective updates/inserts.
 We also learned some animations in CSS and combined that with our newly learned SASS/SCSS framework. The logo would change depending on the timer progress and the input fields and buttons also have some animations as well. Altogether, we believe that we have met and even exceeded the 10-point allocation for our creative portion.
+
+[See Code on GitHub](https://github.com/rick-lichen/Portfolio/edit/master/Focus_Tree)
