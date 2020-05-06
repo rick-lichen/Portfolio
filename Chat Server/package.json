@@ -1,0 +1,26 @@
+{
+  "name": "module6_group",
+  "version": "1.0.0",
+  "description": "Our module 6 group portion 466711, 466648",
+  "main": "chat-server.js",
+  "dependencies": {
+    "mime": "^2.4.4",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh WAng",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cse330-spring-2020/module6-group-module6-466648-466711.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cse330-spring-2020/module6-group-module6-466648-466711/issues"
+  },
+  "homepage": "https://github.com/cse330-spring-2020/module6-group-module6-466648-466711#readme"
+}
