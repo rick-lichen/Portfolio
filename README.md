@@ -6,7 +6,7 @@
 
 ![Chat Server Demo](/Demos/Chat_Server_Demo.gif)
 
-[See Description and Code](./Chat Server/README.md)
+[See Description and Code](./Chat%20Server/README.md)
 
 ![Focus Tree Demo](/Demos/Focus_Tree_Demo.gif)
-[See Description and Code](./Focus Tree/README.md)
+[See Description and Code](./Focus%20Tree/README.md)
