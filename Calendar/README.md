@@ -1,6 +1,9 @@
 # Calendar Web Application 
 This is a Calendar web app built from PHP, MySQL, HTML & CSS, Javascript served originally on an AWS EC2 Instance with Apache. This was an assignment from WashU's CSE330 course – Rapid Prototype Development and Creative Programming, and was done with my partnet Josh Wang.
 
+**Short Demo**
+![Calendar Demo](demos/Calendar Demo.gif)
+
 **Functionalities**: 
 - The calendar is displayed as a table grid with days as the columns and weeks as the rows, one month at a time
 - The user can view different months as far in the past or future as desired 
