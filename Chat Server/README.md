@@ -1,6 +1,13 @@
 # Chat Server Web App
 This is a Chat Server web app built from Node.js and Socket.io. This was an assignment from WashU's CSE330 course – Rapid Prototype Development and Creative Programming, and was done with my partnet Josh Wang.
 
+**Short Demo**
+
+![Chat Server Demo](../Demos/Chat_Server_Demo.gif)
+
+For the full demo video, see https://youtu.be/N0FixoygLeg
+
+
 **Functionalities**: 
 - Users can create chat rooms with an arbitrary room name
 - Users can join an arbitrary chat room
