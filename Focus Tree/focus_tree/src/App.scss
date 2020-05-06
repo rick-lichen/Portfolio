@@ -1,0 +1,368 @@
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+.App-logo-done {
+  height: 20vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s linear;
+    animation-direction: alternate;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-done {
+    animation: tree-grown 2s;
+  }
+}
+@keyframes tree-grown {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.65);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.65);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34;*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100%;
+}
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@function CalculateHeight($height, $percentage) {
+  @return $height * $percentage;
+}
+@mixin LRMiddle {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: CalculateHeight(70vh, 0.6);
+  margin: 5px;
+  align-self: center;
+  font-size: 15px;
+}
+@mixin inputLook {
+  color: #f7f7f7;
+  border: 0;
+  border-bottom: 2px solid #f7f7f7;
+  background: transparent;
+  margin: 3px;
+  transition: color 0.5s, border-bottom 0.5s;
+}
+@mixin inputFocusLook {
+  outline: none;
+  color: #056644;
+  border-bottom: 2px solid #056644;
+  ::placeholder {
+    color: transparent;
+  }
+}
+//The 2 mixins below is adapted from https://uicookies.com/css-buttons/
+@mixin btn-border-drawing(
+  $color: #ccc,
+  $hover: black,
+  $width: 2px,
+  $vertical: top,
+  $horizontal: left,
+  $duration: 0.25s
+) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    #{$vertical}: 0;
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == "left", "right", "left");
+
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+
+  &::after {
+    $v-side: if($vertical == "top", "bottom", "top");
+
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+
+  &:hover {
+    color: $hover;
+
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      transition-delay: 0s, 0s, $duration;
+    }
+
+    &::after {
+      transition-delay: 0s, $duration, 0s;
+    }
+  }
+}
+@mixin button_look {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1rem "Roboto Slab", sans-serif;
+  padding: 0.5em 1em;
+  letter-spacing: 0.05rem;
+}
+.TopContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  align-items: center;
+  margin: 10px;
+  height: 20%;
+  .login_register {
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    input {
+      @include inputLook;
+    }
+    input:focus {
+      @include inputFocusLook;
+    }
+    button {
+      margin: 2px;
+      @include btn-border-drawing(#f7f7f7, #056644, 2px, bottom, right);
+      @include button_look();
+    }
+    .input_field_lr {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-right: 10px;
+    }
+    .input_button_lr {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.MiddleContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  margin: 10px;
+  width: 90%;
+  overflow: hidden;
+  .ToDoStuff {
+    @include LRMiddle;
+    height: 51vh;
+    //Border lines
+    border-right: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .ToDoMessage {
+      text-emphasis: strong;
+    }
+    .ListToDo {
+      flex: 3;
+      height: 70%;
+      font-size: 20px;
+      overflow: auto;
+    }
+    .InputTodo {
+      flex: 1;
+      height: 20%;
+      .todo_input {
+        text-align: center;
+        @include inputLook;
+      }
+      .todo_input:focus {
+        @include inputFocusLook;
+      }
+      button {
+        @include btn-border-drawing(#f7f7f7, #056644, 2px, bottom, right);
+        @include button_look();
+      }
+    }
+  }
+  .TimerStuff {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .runningTimer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .Timer {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        svg.CircularProgressbar {
+          width: 50%;
+        }
+        strong#TimerText {
+          font-size: 40px;
+          margin-top: 100%;
+        }
+        button {
+          display: inline-block;
+          @include btn-border-drawing(#f7f7f7, #056644, 2px, bottom, right);
+          @include button_look;
+        }
+        .noEmergency {
+          margin: 1px;
+        }
+        // .child {
+        //   height: inherit;
+        // }
+      }
+      .otherTimerStuff {
+        height: 20%;
+        margin: 20px;
+        div.confirm_box {
+          display: inline-block;
+        }
+      }
+    }
+    div {
+      input {
+        text-align: center;
+        @include inputLook;
+        margin-bottom: 10px;
+      }
+      input:focus {
+        @include inputFocusLook;
+      }
+      button {
+        margin: 5px;
+        @include btn-border-drawing(#f7f7f7, #056644, 2px, bottom, right);
+        @include button_look;
+      }
+    }
+  }
+  .SpotifyStuff {
+    @include LRMiddle;
+    color: #84bd00;
+    height: 70vh;
+    border-left: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 32px;
+    padding-left: 15px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    a {
+      text-decoration: none;
+      color: lightblue;
+      font-size: 20px;
+    }
+    iframe {
+      margin-top: 10px;
+    }
+    .SpotifyPlaylists {
+      div {
+        cursor: pointer;
+        margin: 2px;
+        color: #84bd00;
+      }
+    }
+    button {
+      margin: 2px;
+      @include btn-border-drawing(#f7f7f7, #84bd00, 2px, bottom, right);
+      @include button_look();
+    }
+  }
+}
+.ThemeChanger {
+  height: 10%;
+  margin: 10px;
+  button {
+    margin: 2px;
+    @include btn-border-drawing(#f7f7f7, #056644, 2px, bottom, right);
+    @include button_look();
+  }
+  .dropdown-menu {
+    color: red;
+  }
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+#timer {
+  font-size: 30px;
+}
+button {
+  font-size: 20px;
+}
+.todo_input {
+  font-size: 20px;
+}
+a.dropdown-item {
+  color: white;
+}
+div.login_register div {
+  text-align: center;
+  display: inline-flex;
+}
