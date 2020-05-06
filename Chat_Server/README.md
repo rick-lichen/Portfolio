@@ -5,7 +5,7 @@ This is a Chat Server web app built from Node.js and Socket.io. This was an assi
 
 ![Chat Server Demo](../Demos/Chat_Server_Demo.gif)
 
-For the full demo video, see https://youtu.be/N0FixoygLeg
+For the full demo video, watch on [Youtube](https://youtu.be/N0FixoygLeg)
 
 
 **Functionalities**: 
