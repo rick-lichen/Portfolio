@@ -5,7 +5,7 @@ This is a Chat Server web app built from Node.js and Socket.io. This was an assi
 
 ![Chat Server Demo](../Demos/Chat_Server_Demo.gif)
 
-For the full demo video, see https://youtu.be/N0FixoygLeg
+For the full demo video, watch on [Youtube](https://youtu.be/N0FixoygLeg)
 
 
 **Functionalities**: 
@@ -22,3 +22,5 @@ For the full demo video, see https://youtu.be/N0FixoygLeg
 In addition to the basic functionalities, we decided to experiment with including **audio** to html via javascript and added an audio file to our instance. This is linked to the front-end so that whenever a new message is received, the notification sound is played. 
 
 Finally, we decided to keep a log of the **chatlog** in the respective rooms. This way, any user that joined a room will have any previous conversation loaded into their chatlog section of the webpage. This was done through a pair of arrays associated with each individual room.
+
+[See Code on GitHub](https://github.com/rick-lichen/Portfolio/edit/master/Chat_Server)
