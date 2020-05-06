@@ -1,5 +1,5 @@
 # Calendar Web Application 
-This is a Calendar web app built from PHP, MySQL, HTML & CSS, Javascript served originally on an AWS EC2 Instance with Apache. This was an assignment from WashU's CSE330 course – Rapid Prototype Development and Creative Programming, and was done with my partnet Josh Wang.
+This is a Calendar web app built from PHP, MySQL, HTML & CSS, Javascript served originally on an AWS EC2 Instance with Apache. This was an assignment from WashU's CSE330 course – Rapid Prototype Development and Creative Programming, and was done with my partner Josh Wang.
 
 **Short Demo**
 
