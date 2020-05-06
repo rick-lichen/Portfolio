@@ -5,7 +5,8 @@ This is a Calendar web app built from PHP, MySQL, HTML & CSS, Javascript served 
 
 ![Calendar Demo](../Demos/Calendar_Demo.gif)
 
-For the full demo video, see https://youtu.be/d2yXIUCw_5o
+For the full demo video, watch it on [YouTube](https://youtu.be/d2yXIUCw_5o)
+
 
 **Functionalities**: 
 - The calendar is displayed as a table grid with days as the columns and weeks as the rows, one month at a time
