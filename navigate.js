@@ -1,0 +1,1 @@
+WinJS.Navigation.navigate("/pages/groupedItems/groupedItems.html");

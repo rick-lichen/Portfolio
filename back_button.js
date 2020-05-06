@@ -1,0 +1,1 @@
+var object = new WinJS.UI.BackButton();
